@@ -10,7 +10,48 @@ body {
   padding-left: 1em;
   width: 20em;
   height: 40em; 
+  border-radius: 15px;
+}
 
+.video-card {
+  border: 1px solid rgb(57, 56, 56); 
+  margin-right: 1em;
+  height: 5em;
+  display: flex;
+  margin-top: 0.5em;
+  opacity: 0.8;
+}
+
+.video-card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.video-thumbnail {
+  height: 5em;
+  width: 9em;
+}
+
+.video-card-title {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  font-size: 15px;
+}
+
+.video-card-desc {
+  margin-left: 0.7em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  color: rgb(60, 60, 60);
+}
+
+.play-arrow {
+  margin-left: 0em; 
+  visibility: hidden;
 
 }
 
+.video-card:hover .play-arrow {
+  visibility: visible;
+}

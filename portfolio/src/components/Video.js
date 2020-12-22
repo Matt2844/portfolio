@@ -9,19 +9,19 @@ const projectData = [
   {
     title: 'Burgers-R-Us',
     thumbnail: 'picture here',
-    description: 'Online ordering for restaurant',
+    description: 'LHL Group Project',
     link: 'link goes here'
   },
   {
     title: 'MacBook Webpage Copy',
     thumbnail: 'picture here',
-    description: 'Pixel by pixel copy of a webpage',
+    description: 'Independent Project',
     link: 'link goes here'
   },
   {
     title: 'Tweeter',
     thumbnail: 'picture here',
-    description: 'Twitter clone',
+    description: 'LHL Independent Project',
     link: 'link goes here',
   }
 ]
@@ -35,9 +35,9 @@ export default function Video (props) {
       <div>
         <p>Projects</p>
       </div>
-      <div className="video-card">
+      <div className="card">
         {projectData.map(project => (
-          <p>Video Card here</p>
+          <VideoCard />
         ))}
       </div>
 
