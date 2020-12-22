@@ -4,7 +4,8 @@ import '../video.css'
 
 
 
-export default function VideoCard () {
+
+export default function VideoCard (props) {
 
   const Play = () => {
     console.log('clicked play');
@@ -12,10 +13,10 @@ export default function VideoCard () {
 
   return (
     <div className="video-card" onClick={Play}>
-      <img className="video-thumbnail" alt="video thumbnail" src="./images/burgers-r-us-thumb.png" />
+      <img className="video-thumbnail" alt="video thumbnail" src={props.thumbnail} />
       <div className="video-description-container">
-        <h5 className="video-card-title">Burgers-R-us</h5>
-        <h6 className="video-card-desc">Group Project</h6>
+        <h5 className="video-card-title">{props.title}</h5>
+        <h6 className="video-card-desc">{props.description}</h6>
         <i className="play-arrow"><PlayArrowIcon fontSize="large" /></i>
       </div>
     </div>

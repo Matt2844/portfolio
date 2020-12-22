@@ -4,32 +4,36 @@ body {
 }
 
 .video-container {
-  background-color: cadetblue; 
+  background-color: rgb(23, 22, 22); 
   margin: auto; 
   margin-bottom: 10px;
+  margin-left: 68%;
   padding-left: 1em;
+  padding-top: 0.5em;
   width: 20em;
   height: 40em; 
-  border-radius: 15px;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow:3px 3px 4px grey
 }
 
-.video-card {
-  border: 1px solid rgb(57, 56, 56); 
+.video-card { 
+  background-color: white;
   margin-right: 1em;
   height: 5em;
   display: flex;
   margin-top: 0.5em;
-  opacity: 0.8;
 }
 
 .video-card:hover {
-  opacity: 1;
+  background-color: rgb(200, 245, 154);
   cursor: pointer;
 }
 
 .video-thumbnail {
   height: 5em;
   width: 9em;
+  
 }
 
 .video-card-title {
