@@ -1,17 +1,16 @@
 import React from 'react'
-import SimpleBackdrop from './components/SimpleBackdrop'
 import SearchAppBar from './components/Toolbar'
 import Video from './components/Video'
 import "./app.css"
+import VideoScreen from './components/VideoScreen';
 
 
 function App () {
   return (
     <div className="App">
       <SearchAppBar />
-      <p>Hello</p>
-      <SimpleBackdrop />
       <div className="Video">
+        <VideoScreen />
         <Video />
       </div>
     </div>

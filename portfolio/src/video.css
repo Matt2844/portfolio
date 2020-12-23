@@ -3,16 +3,19 @@ body {
   margin: 0px; 
 }
 
+/* The list of projects */
+
 .video-container {
   background-color: rgb(23, 22, 22); 
   margin: auto; 
   margin-bottom: 10px;
-  margin-left: 68%;
+  margin-left: 2%;
+  margin-right: 5%; 
   padding-left: 1em;
   padding-top: 0.5em;
   width: 20em;
-  height: 40em; 
-  border-radius: 12px;
+  height: 45em; 
+  border-radius: 11px;
   border: 1px solid black;
   box-shadow:3px 3px 4px grey
 }
@@ -58,4 +61,19 @@ body {
 
 .video-card:hover .play-arrow {
   visibility: visible;
+}
+
+
+/* The video player section */
+
+.Video {
+  display: flex; 
+  justify-content: space-around;
+}
+
+.video-screen-container {
+  width: 53em; 
+  height: 30em;
+  margin-left: 4em; 
+  border: 1px solid black;  
 }

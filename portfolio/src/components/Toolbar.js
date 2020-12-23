@@ -11,9 +11,11 @@ import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import SimpleBackdrop from './SimpleBackdrop';
+import { FilterNone } from '@material-ui/icons';
 
 
 
@@ -25,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    display: 'none',
+
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
@@ -43,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(3),
       width: 'auto',
+    },
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
     },
   },
   searchIcon: {
@@ -67,6 +72,11 @@ const useStyles = makeStyles((theme) => ({
       width: '20ch',
     },
   },
+  searchButton: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  },
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
@@ -81,6 +91,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 export default function PrimarySearchAppBar () {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -89,9 +100,9 @@ export default function PrimarySearchAppBar () {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  // const handleProfileMenuOpen = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -108,6 +119,9 @@ export default function PrimarySearchAppBar () {
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
+
+    // Drop down menu when Icons are clicked. Currently not in use. 
+
     <Menu
       anchorEl={anchorEl}
       anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
@@ -117,8 +131,8 @@ export default function PrimarySearchAppBar () {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Open GitHub</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Close</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Not in Use</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Close(Not in Use)</MenuItem>
     </Menu>
   );
 
@@ -144,10 +158,18 @@ export default function PrimarySearchAppBar () {
       <MenuItem>
         <IconButton aria-label="show 3 new notifications" color="inherit">
           <Badge badgeContent={3} color="secondary">
-            <NotificationsIcon />
+            <LinkedInIcon />
           </Badge>
         </IconButton>
         <p>Notifications</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton aria-label="show 1 new mails" color="inherit">
+          <Badge>
+            <GitHubIcon />
+          </Badge>
+        </IconButton>
+        <p>Git Hub</p>
       </MenuItem>
     </Menu>
   );
@@ -172,24 +194,28 @@ export default function PrimarySearchAppBar () {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Web Developer"
+              placeholder={"Web Developer"}
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
+
+          </div>
+          <div className={classes.searchButton}>
+            <SimpleBackdrop />
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
+            <IconButton aria-label="show 1 new mails" color="inherit">
               <Badge badgeContent={1} color="secondary">
                 <MailIcon />
               </Badge>
             </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
+            <IconButton aria-label="show 3 new notifications" color="inherit">
               <Badge badgeContent={3} color="secondary">
-                <NotificationsIcon />
+                <LinkedInIcon />
               </Badge>
             </IconButton>
             <IconButton
@@ -197,7 +223,6 @@ export default function PrimarySearchAppBar () {
               aria-label="account of current user"
               aria-controls={menuId}
               aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
               color="inherit"
             >
               <GitHubIcon />
