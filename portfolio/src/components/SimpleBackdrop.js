@@ -20,12 +20,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SimpleBackdrop () {
+export default function SimpleBackdrop (props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [msgOpen, setMsgOpen] = React.useState(false);
 
-  /* for the snack bar */
+  // for the snack bar
   const handleClick = () => {
     setMsgOpen(true);
   };
@@ -35,22 +35,33 @@ export default function SimpleBackdrop () {
     setMsgOpen(false);
   };
 
-  /* for the search button */
+  // for the search button 
   const handleClose = () => {
     setOpen(false);
   };
+
+  // When the search button is clicked. Looks for search value and handles input. 
   const handleToggle = () => {
+    let searchValue = props.searchClicked;
+    searchValue = searchValue.trim();
+
     setOpen(!open);
     setTimeout(() => {
       handleClose();
     }, 1100)
-    handleClick();
+
+
+    if (searchValue === 'about') {
+      console.log('success: about')
+    } else {
+      handleClick();
+    }
   };
 
   return (
     <div>
       <div>
-        <Button className={classes.searchButton} variant="outlined" color="primary" onClick={handleToggle}>
+        <Button className={classes.searchButton} variant="outlined" color="primary" onClick={handleToggle}   >
           Search
       </Button>
         <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>

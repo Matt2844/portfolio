@@ -15,7 +15,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import SimpleBackdrop from './SimpleBackdrop';
-import { FilterNone } from '@material-ui/icons';
+import { FilterNone, SettingsInputAntenna } from '@material-ui/icons';
 
 
 
@@ -100,9 +100,13 @@ export default function PrimarySearchAppBar () {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  // State for the search input field
+  const [searchInput, setInputValue] = React.useState('');
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+
 
   // const handleProfileMenuOpen = (event) => {
   //   setAnchorEl(event.currentTarget);
@@ -204,11 +208,12 @@ export default function PrimarySearchAppBar () {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
+              onChange={event => setInputValue(event.target.value)}
             />
 
           </div>
           <div className={classes.searchButton}>
-            <SimpleBackdrop className={classes.searchButtonStyling} />
+            <SimpleBackdrop className={classes.searchButtonStyling} searchClicked={searchInput} />
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
