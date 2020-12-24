@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     zIndex: theme.zIndex.drawer + 1,
     color: '#fff',
   },
+  searchButton: {
+    color: 'black',
+    fontSize: '12px',
+    height: '29px',
+  }
 }));
 
 export default function SimpleBackdrop () {
@@ -26,7 +31,7 @@ export default function SimpleBackdrop () {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleToggle}>
+      <Button className={classes.searchButton} variant="outlined" color="primary" onClick={handleToggle}>
         Search
       </Button>
       <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>

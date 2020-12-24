@@ -63,6 +63,10 @@ const useStyles = makeStyles((theme) => ({
     color: 'inherit',
   },
   inputInput: {
+    border: "1px solid grey",
+    borderRadius: "3px",
+    fontSize: '14px',
+    height: "11px",
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
@@ -177,7 +181,7 @@ export default function PrimarySearchAppBar () {
   return (
     <div className={classes.grow}>
       <AppBar position="fixed">
-        <Toolbar style={{ backgroundColor: "#171616" }}>
+        <Toolbar style={{ backgroundColor: "white", color: "black" }}>
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -204,7 +208,7 @@ export default function PrimarySearchAppBar () {
 
           </div>
           <div className={classes.searchButton}>
-            <SimpleBackdrop />
+            <SimpleBackdrop className={classes.searchButtonStyling} />
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
