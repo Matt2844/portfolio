@@ -68,3 +68,78 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* For functional purposes, this is div is not visible, only there to support the formatting */
+.video-screen-container {
+  height: 10em; 
+}
+
+
+/* The video description section */ 
+
+.description {
+  background-color: white;
+  height: 42em; 
+  width: 53.3em;
+  margin-top: 1em; 
+  padding-top: 0.1em;
+  border-radius: 11px;
+  box-shadow:2px 2px 4px grey
+}
+
+.project-title {
+  font-weight: 400;
+  margin-left: 0.7em;
+  margin-bottom: 0em;
+}
+
+.project-views-date {
+  color: grey; 
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-right: 3em;
+}
+
+hr {
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+}
+
+.project-description-title {
+  font-weight: 400;
+  margin-left: 0.7em; 
+  margin-bottom: 0em; 
+}
+
+.project-description-text {
+  margin-left: 0.7em;
+  margin-right: 15em;
+  margin-bottom: 2em; 
+  font-size: 14px;
+}
+
+.project-challenges-title {
+  font-weight: 400;
+  margin-left: 0.7em; 
+  margin-bottom: 0em;
+}
+
+.project-challenges-text {
+  margin-left: 0.7em;
+  margin-right: 15em;
+  margin-bottom: 2em; 
+  font-size: 14px;
+}
+
+.project-outcomes-title {
+  font-weight: 400;
+  margin-left: 0.7em; 
+  margin-bottom: 0em;
+}
+
+.project-outcomes-text {
+  margin-left: 0.7em;
+  margin-right: 15em;
+  margin-bottom: 2em; 
+  font-size: 14px;
+}
