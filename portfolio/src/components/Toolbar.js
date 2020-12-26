@@ -15,7 +15,8 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import SimpleBackdrop from './SimpleBackdrop';
-import { FilterNone, SettingsInputAntenna } from '@material-ui/icons';
+import CodeIcon from '@material-ui/icons/Code';
+
 
 
 
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-
+    marginLeft: '0.6em',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
@@ -186,14 +187,10 @@ export default function PrimarySearchAppBar () {
     <div className={classes.grow}>
       <AppBar position="fixed">
         <Toolbar style={{ backgroundColor: "white", color: "black" }}>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
+
+
+          <CodeIcon />
+
           <Typography className={classes.title} variant="h6" noWrap>
             Matt Ford
           </Typography>

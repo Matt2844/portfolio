@@ -37,7 +37,7 @@ const projectData = [
       description: `A pixel for pixel copy of a webpage from Apple's website. Built using only HTML and CSS.`,
       challenges: `I could barely write a line of code before this project. This project was the most simple out of all the projects
       I have done, yet I had to Google something every 5 minutes. I also had no idea how difficult or easy the project would be.
-      I simply had to think "OK, if I can figure out to copy the nav bar, I can probably do everything else."`,
+      I simply had to think that if I can figure out how to copy the nav bar, I can probably do everything else.`,
       positiveOutcomes: `800 lines of CSS later, I gained a solid understanding of the language, in addition to HTML. Knowing that I 
       could build a webpage while not knowing a thing gave me a lot of confidence.`
     }
@@ -110,7 +110,7 @@ const projectData = [
       videoData: '3K views, developed Nov 5, 2020',
       description: `A personal notebook to store useful material so that it can be referenced again in the future. Also helps solidify new concepts.
       Project is meant to be ongoing.`,
-      challenges: `Having the time to update it. It is built so that is is pretty easy to maintain and update, however, when you are learning
+      challenges: `Having the time to update it. It is built so that it is easy to maintain and update, however, when you are learning
       10 new things a day, being able to update it all the time is difficult.`,
       positiveOutcomes: `Experiencing the benefits of web development first hand. Web apps are usually intended to make our lives
       easier, and this project has certainly done that. I can reference the content in this project efficiently. If I put the material into a word document or physical notebook, I would probably forget about it, and it would be difficult to reference. `
