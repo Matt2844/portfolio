@@ -214,24 +214,23 @@ export default function PrimarySearchAppBar () {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 1 new mails" color="inherit">
+            <IconButton aria-label="show 1 new mails" color="inherit" href="mailto:matt.hd.ford@gmail.com">
               <Badge badgeContent={1} color="secondary">
                 <MailIcon />
               </Badge>
             </IconButton>
-            <IconButton aria-label="show 3 new notifications" color="inherit">
-              <Badge badgeContent={3} color="secondary">
+            <IconButton aria-label="show 3 new notifications" color="inherit" href="https://www.linkedin.com/sharing/share-offsite/?url=http://www.linkedin.com/in/matthew-ford-4327387b/">
+              <Badge badgeContent={3} color="secondary" >
                 <LinkedInIcon />
               </Badge>
             </IconButton>
             <IconButton
               edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
+              href="https://github.com/Matt2844"
               color="inherit"
             >
               <GitHubIcon />
+
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>
@@ -247,8 +246,8 @@ export default function PrimarySearchAppBar () {
           </div>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
-    </div>
+      { renderMobileMenu}
+      { renderMenu}
+    </div >
   );
 }
