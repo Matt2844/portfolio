@@ -8,7 +8,6 @@ import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MailIcon from '@material-ui/icons/Mail';
 import MoreIcon from '@material-ui/icons/MoreVert';
@@ -47,9 +46,6 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(3),
       width: 'auto',
     },
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -75,11 +71,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     [theme.breakpoints.up('md')]: {
       width: '20ch',
-    },
-  },
-  searchButton: {
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
     },
   },
   sectionDesktop: {

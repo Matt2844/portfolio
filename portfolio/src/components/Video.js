@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import { makeStyles } from '@material-ui/core/styles';
 
 import '../video.css'
+
 
 
 
@@ -121,7 +123,28 @@ const projectData = [
 
 
 
+
+const useStyles = makeStyles((theme) => ({
+  videoFrame: {
+    width: '854px',
+    height: '480px',
+    [theme.breakpoints.down('md')]: {
+      width: '640px',
+      height: '360px',
+      marginLeft: '0em',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '426px',
+      height: '240px',
+      marginLeft: '0em',
+    },
+  }
+}));
+
+
+
 export default function Video (props) {
+  const classes = useStyles();
 
   const [videoSrc, setVideoSrc] = useState(projectData[2].link)
   const [descTitle, setTitle] = useState(projectData[2].aboutProject.title)
@@ -135,7 +158,7 @@ export default function Video (props) {
     <div className="main-video-container">
 
       <div className="video-screen-container">
-        <iframe width="854" height="480" src={videoSrc} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className={classes.videoFrame} src={videoSrc} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div className="description">
           <h3 className="project-title">{descTitle}</h3>
           <h5 className="project-views-date">{videoData}</h5><hr />
