@@ -15,7 +15,7 @@ export default function SkillsAndContact () {
         <div className="contact">
           <p>Contact:</p>
           <a className="email-link" href="mailto:matt.hd.ford@gmail.com">matt.hd.ford@gmail.com</a>
-          <p className="contact-or">OR</p>
+          <p className="contact-or">or</p>
           <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://www.linkedin.com/in/matthew-ford-4327387b/"><img className="linkedin-contact" src="./images/linkedin-full.png" /></a>
 
         </div>

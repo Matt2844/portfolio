@@ -23,7 +23,7 @@ const projectData = [
       On top of that, this was a remote group project.`,
       positiveOutcomes: `Discovered that group projects can be fun, and they can make you a better developer. You get to learn from 
       other developers when you see them do something that you did not know how to do. Of course, it was also great to learn how to 
-      use version control while working with others on the same project.`
+      use version control when working with others on the same project.`
     }
   },
   {
@@ -38,8 +38,8 @@ const projectData = [
       challenges: `I could barely write a line of code before this project. This project was the most simple out of all the projects
       I have done, yet I had to Google something every 5 minutes. I also had no idea how difficult or easy the project would be.
       I simply had to think that if I can figure out how to copy the nav bar, I can probably do everything else.`,
-      positiveOutcomes: `800 lines of CSS later, I gained a solid understanding of the language, in addition to HTML. Knowing that I 
-      could build a webpage while not knowing a thing gave me a lot of confidence.`
+      positiveOutcomes: `800 lines of CSS later, I gained a solid understanding of the language. Also, knowing that I 
+      could build a webpage without any prior knowledge of CSS or HTML gave me a lot of confidence.`
     }
   },
   {
