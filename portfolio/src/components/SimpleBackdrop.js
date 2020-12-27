@@ -4,9 +4,12 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal'
+import LanguageIcon from '@material-ui/icons/Language';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import StorageIcon from '@material-ui/icons/Storage';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
 /* imports for the snackbar */
 import Snackbar from '@material-ui/core/Snackbar';
-import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 
 function getModalStyle () {
@@ -27,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     position: 'absolute',
+    outline: 'none',
     width: 400,
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
@@ -63,11 +67,23 @@ export default function SimpleBackdrop (props) {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
+
       <CloseIcon className="skills-modal-close" onClick={handleCloseModal} />
-      <h2 id="simple-modal-title">Text in a modal</h2>
-      <p id="simple-modal-description">
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+
+      <LanguageIcon />
+      <h3 className="modal-title">Languages:</h3>
+      <p className="modal-languages-description">
+        Javascript, HTML, CSS, Ruby
       </p>
+      <MenuBookIcon />
+      <h3 className="modal-title">Frameworks, Libraries, and Environments:</h3>
+      <p className="modal-libraries-description">ReactJS, Material-UI, NodeJS, Express, jQuery, SASS, Bootstrap, Rails, EJS, AJAX, Axios </p>
+      <StorageIcon />
+      <h3 className="modal-title">Systems and Databases:</h3>
+      <p className="modal-systems-description">SQL, npm, Git</p>
+      <CheckBoxIcon />
+      <h3 className="modal-title">Testing:</h3>
+      <p className="modal-testing-description">Mocha, Chai, ESLint, Jest, Cypress, Storybook</p>
     </div>
   );
 

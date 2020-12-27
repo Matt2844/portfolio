@@ -283,3 +283,24 @@ li .canada-flag {
 .linkedin-contact:hover {
   background-color: rgb(245, 245, 245);
 }
+
+/* the modal when skills is typed in the search bar */
+
+.skills-modal-close {
+  margin-left: 95%;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.modal-languages-description,
+.modal-libraries-description,
+.modal-systems-description,
+.modal-testing-description {
+  margin-bottom: 3.3em;
+  font-size: 15px;
+
+}
