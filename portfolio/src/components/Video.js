@@ -25,7 +25,23 @@ const projectData = [
       On top of that, this was a remote group project.`,
       positiveOutcomes: `Discovered that group projects can be fun, and they can make you a better developer. You get to learn from 
       other developers when you see them do something that you did not know how to do. Of course, it was also great to learn how to 
-      use version control when working with others on the same project.`
+      use version control when working with others on the same project.`,
+    }
+  },
+  {
+    title: 'UI/UX Insights',
+    thumbnail: './images/UX-webpage.png',
+    description: 'Independent Project',
+    link: 'https://www.youtube.com/embed/3HgbrxgKOPg',
+    aboutProject: {
+      title: 'UI/UX Development Insights',
+      videoData: '80K views, developed Dec 30, 2020',
+      description: `A simple webpage that stresses the importance of UI/UX development. The success of a company can depend
+      on the quality of the UX, yet its overall adoption by the tech sector has been quite slow.`,
+      challenges: `Not having a web designer to work with. Good web design takes a lot of time and skill. 
+      Since I am not a web designer, I struggled to make the webpage presentable while working with the alloted time I had.`,
+      positiveOutcomes: `Was able to create something presentable in a short amount of time. The design could definitely be improved,
+      but I guess that is why people hire web designers.`
     }
   },
   {
@@ -146,12 +162,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Video (props) {
   const classes = useStyles();
 
-  const [videoSrc, setVideoSrc] = useState(projectData[2].link)
-  const [descTitle, setTitle] = useState(projectData[2].aboutProject.title)
-  const [videoData, setVideoData] = useState(projectData[2].aboutProject.videoData)
-  const [desc, setDesc] = useState(projectData[2].aboutProject.description)
-  const [challenges, setChallenges] = useState(projectData[2].aboutProject.challenges)
-  const [outcomes, setOutcomes] = useState(projectData[2].aboutProject.positiveOutcomes)
+  const [videoSrc, setVideoSrc] = useState(projectData[3].link)
+  const [descTitle, setTitle] = useState(projectData[3].aboutProject.title)
+  const [videoData, setVideoData] = useState(projectData[3].aboutProject.videoData)
+  const [desc, setDesc] = useState(projectData[3].aboutProject.description)
+  const [challenges, setChallenges] = useState(projectData[3].aboutProject.challenges)
+  const [outcomes, setOutcomes] = useState(projectData[3].aboutProject.positiveOutcomes)
 
   return (
 
@@ -199,4 +215,5 @@ export default function Video (props) {
     </div>
   )
 }
+
 
