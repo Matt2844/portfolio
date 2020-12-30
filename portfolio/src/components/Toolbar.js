@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
       width: 'auto',
     },
   },
+  menuItem: {
+    cursor: 'default',
+  },
   searchIcon: {
     padding: theme.spacing(0, 2),
     height: '100%',
@@ -117,24 +120,7 @@ export default function PrimarySearchAppBar () {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
 
-    // Drop down menu when Icons are clicked. Currently not in use. 
-
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Not in Use</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Close(Not in Use)</MenuItem>
-    </Menu>
-  );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
@@ -147,29 +133,28 @@ export default function PrimarySearchAppBar () {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton aria-label="show 1 new mails" color="inherit">
+      <MenuItem className={classes.menuItem}>
+        <IconButton aria-label="show 1 new mails" color="inherit" href="mailto:matt.hd.ford@gmail.com">
           <Badge badgeContent={1} color="secondary">
             <MailIcon />
           </Badge>
         </IconButton>
-        <p>Contact</p>
       </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 3 new notifications" color="inherit">
+
+      <MenuItem className={classes.menuItem}>
+        <IconButton aria-label="show 3 new notifications" color="inherit" href="https://www.linkedin.com/sharing/share-offsite/?url=http://www.linkedin.com/in/matthew-ford-4327387b/">
           <Badge badgeContent={3} color="secondary">
             <LinkedInIcon />
           </Badge>
         </IconButton>
-        <p>Notifications</p>
       </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 1 new mails" color="inherit">
+
+      <MenuItem className={classes.menuItem}>
+        <IconButton aria-label="show 1 new mails" color="inherit" href="https://github.com/Matt2844">
           <Badge>
             <GitHubIcon />
           </Badge>
         </IconButton>
-        <p>Git Hub</p>
       </MenuItem>
     </Menu>
   );
@@ -238,7 +223,7 @@ export default function PrimarySearchAppBar () {
         </Toolbar>
       </AppBar>
       { renderMobileMenu}
-      { renderMenu}
+
     </div >
   );
 }
