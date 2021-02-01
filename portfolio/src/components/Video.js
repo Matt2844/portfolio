@@ -10,6 +10,25 @@ import '../video.css'
 
 const projectData = [
   {
+    title: 'Fresh BsQt',
+    thumbnail: './images/fresh-thumb.png',
+    description: 'LHL Group Project',
+    link: 'https://www.youtube.com/embed/u-otrA9L96w',
+    aboutProject: {
+      title: 'Fresh BsQt',
+      videoData: '617K views, developed Jan 28, 2021',
+      description: `An online shopping website meant for local groceries. The site uses the users location and if a registered store is within a certain distance from the user, products will 
+      display as available. A group project part of the LHL curriculum.`,
+      challenges: `This was a full stack project built from scratch in ten days. That meant planning the idea, building out wireframes and designs in Figma, and setting up the database structure. 
+      There was so much planning involved, that it actually took a while before we could write the first line of code. At first, this was an overwhelming experience. On top of all that, 
+      none of us in the group of three knew how to work with the Google Maps API. The API was a lot of fun to work with, but we all had to learn on the go.`,
+      positiveOutcomes: `It was a lot of fun to build a full stack project from scratch as a group. Sure, practicing whiteboarding questions can help you as a developer, 
+      but it was such an amazing experience to do some 'real' developing. This meant we had to do more than just code. For example, it involved myself creating designs for a feature 
+      on Figma, forwarding the designs to my team members, and asking for their input. Another example could be when I had to spend hours researching the Google Maps API. Although this project has thousands of lines of code, it was nice to be involved in the processes that 
+      happen before the code was written.`
+    }
+  },
+  {
     title: 'Burgers-R-Us',
     thumbnail: './images/burgers-r-us-thumb.png',
     description: 'LHL Group Project',
@@ -26,22 +45,6 @@ const projectData = [
       positiveOutcomes: `Discovered that group projects can be fun, and they can make you a better developer. You get to learn from 
       other developers when you see them do something that you did not know how to do. Of course, it was also great to learn how to 
       use version control when working with others on the same project.`,
-    }
-  },
-  {
-    title: 'UI/UX Insights',
-    thumbnail: './images/UX-webpage.png',
-    description: 'Independent Project',
-    link: 'https://www.youtube.com/embed/3HgbrxgKOPg',
-    aboutProject: {
-      title: 'UI/UX Development Insights',
-      videoData: '80K views, developed Dec 30, 2020',
-      description: `A simple webpage that stresses the importance of UI/UX development. The success of a company can depend
-      on the quality of the UX, yet its overall adoption by the tech sector has been quite slow.`,
-      challenges: `Not having a web designer to work with. Good web design takes a lot of time and skill. 
-      Since I am not a web designer, I struggled to make the webpage presentable while working with the alloted time I had.`,
-      positiveOutcomes: `Was able to create something presentable in a short amount of time. The design could definitely be improved,
-      but I guess that is why people hire web designers.`
     }
   },
   {
@@ -98,6 +101,22 @@ const projectData = [
       to visualize what is happening behind the scenes.`,
       positiveOutcomes: `Had the opportunity to realize that dynamic content is not as difficult as it seems. Also, it is a pretty 
       good feeling when you click refresh and still see the data sitting there.`
+    }
+  },
+  {
+    title: 'UI/UX Insights',
+    thumbnail: './images/UX-webpage.png',
+    description: 'Independent Project',
+    link: 'https://www.youtube.com/embed/3HgbrxgKOPg',
+    aboutProject: {
+      title: 'UI/UX Development Insights',
+      videoData: '80K views, developed Dec 30, 2020',
+      description: `A simple webpage that stresses the importance of UI/UX development. The success of a company can depend
+      on the quality of the UX, yet its overall adoption by the tech sector has been quite slow.`,
+      challenges: `Not having a web designer to work with. Good web design takes a lot of time and skill. 
+      Since I am not a web designer, I struggled to make the webpage presentable while working with the alloted time I had.`,
+      positiveOutcomes: `Was able to create something presentable in a short amount of time. The design could definitely be improved,
+      but I guess that is why people hire web designers.`
     }
   },
   {

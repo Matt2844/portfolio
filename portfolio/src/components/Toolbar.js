@@ -134,7 +134,7 @@ export default function PrimarySearchAppBar () {
       onClose={handleMobileMenuClose}
     >
       <MenuItem className={classes.menuItem}>
-        <IconButton aria-label="show 1 new mails" color="inherit" href="mailto:matt.hd.ford@gmail.com">
+        <IconButton aria-label="show 1 new mails" color="inherit" href="mailto:matt.hd.ford@gmail.com" >
           <Badge badgeContent={1} color="secondary">
             <MailIcon />
           </Badge>
