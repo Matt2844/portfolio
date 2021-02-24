@@ -104,22 +104,6 @@ const projectData = [
     }
   },
   {
-    title: 'UI/UX Insights',
-    thumbnail: './images/UX-webpage.png',
-    description: 'Independent Project',
-    link: 'https://www.youtube.com/embed/3HgbrxgKOPg',
-    aboutProject: {
-      title: 'UI/UX Development Insights',
-      videoData: '80K views, developed Dec 30, 2020',
-      description: `A simple webpage that stresses the importance of UI/UX development. The success of a company can depend
-      on the quality of the UX, yet its overall adoption by the tech sector has been quite slow.`,
-      challenges: `Not having a web designer to work with. Good web design takes a lot of time and skill. 
-      Since I am not a web designer, I struggled to make the webpage presentable while working with the alloted time I had.`,
-      positiveOutcomes: `Was able to create something presentable in a short amount of time. The design could definitely be improved,
-      but I guess that is why people hire web designers.`
-    }
-  },
-  {
     title: 'MS-Paint',
     thumbnail: './images/ms-paint1.png',
     description: 'Just For Fun',
