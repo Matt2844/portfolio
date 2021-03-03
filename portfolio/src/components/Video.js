@@ -29,6 +29,23 @@ const projectData = [
     }
   },
   {
+    title: 'UX Facts',
+    thumbnail: './images/ux-screenshot.png',
+    description: 'Independent Project',
+    link: 'https://www.youtube.com/embed/N5DBpN9-7xw',
+    aboutProject: {
+      title: 'UX-Facts',
+      videoData: '27K views, developed Mar 2, 2021',
+      description: `A simple and quick project to highlight the importance of the user when it comes to web development.
+      Built with React. Took about two hours which included building a wireframe using Figma.`,
+      challenges: `The original plan was to make the site look exactly like the Figma wireframe. When it came to the actual development, 
+      I realized that I could improve the design and include a video background. This added a lot of time, and it took a while to find the right video background.`,
+      positiveOutcomes: `I am not much of a web designer, but creating side projects like this has greatly improved my design skills. I think it is
+      important as a developer that I should know some of the basics when it comes to design. It is fun to look back at the projects
+      I made from a while ago, and see how much my sense of design has improved.`
+    }
+  },
+  {
     title: 'Burgers-R-Us',
     thumbnail: './images/burgers-r-us-thumb.png',
     description: 'LHL Group Project',
@@ -103,24 +120,6 @@ const projectData = [
       good feeling when you click refresh and still see the data sitting there.`
     }
   },
-  {
-    title: 'MS-Paint',
-    thumbnail: './images/ms-paint1.png',
-    description: 'Just For Fun',
-    link: 'https://www.youtube.com/embed/wgrhSCet7Jg',
-    aboutProject: {
-      title: 'MS-Paint Hat Tip',
-      videoData: '1.7M views, developed Nov 10, 2020',
-      description: `A Microsoft Paint themed project, built for fun during my spare time.`,
-      challenges: `A month before building this brainless app, I came across a web developers portfolio where you could
-      draw a moustache on her face. I thought it was the coolest thing in the world at the time, and I wanted to figure out how it
-      was done. Figuring out how on earth she did that was sadly the biggest challenge.`,
-      positiveOutcomes: `Overall, coding and building web apps is fun. However, there are often deadlines, difficult problems, roadblocks, 
-      and specific requirements that have to be met. Taking a step back after a serious project to build something creative and light is a great way
-      to ensure web development is always fun and balanced.`
-    }
-  },
-
   {
     title: 'Coding Notebook',
     thumbnail: './images/pieces-of-code.png',
