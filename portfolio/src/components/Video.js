@@ -29,6 +29,21 @@ const projectData = [
     }
   },
   {
+    title: 'Pet Report Pro',
+    thumbnail: './images/pr-pro-thumbnail.png',
+    description: 'Independent Project',
+    link: 'https://www.youtube.com/embed/lmPR5wxR7No',
+    aboutProject: {
+      title: 'Pet Report Pro',
+      videoData: '58K views, developed Mar 15, 2021',
+      description: `An application that allows the user to create a pet report card, depending on the pet service that they provide. The form can be instantly downloaded as a PDF. Built with React.`,
+      challenges: `Incorporating Firebase to use as a BaaS. The app is still under development and a number of features still need to be built. This includes using Firebase with Stripe. I have never set
+      up a production level application before, so making sure that the app is flawless before being hosted live is very time consuming.`,
+      positiveOutcomes: `Since I am planning on making this a production level app, I got to be involved in new processes I have never done before. At times this meant reaching out to
+      industry professionals to get their opinion. It also meant learning more about using a BaaS such as Firebase.`,
+    }
+  },
+  {
     title: 'UX Facts',
     thumbnail: './images/ux-screenshot.png',
     description: 'Independent Project',
@@ -164,12 +179,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Video (props) {
   const classes = useStyles();
 
-  const [videoSrc, setVideoSrc] = useState(projectData[3].link)
-  const [descTitle, setTitle] = useState(projectData[3].aboutProject.title)
-  const [videoData, setVideoData] = useState(projectData[3].aboutProject.videoData)
-  const [desc, setDesc] = useState(projectData[3].aboutProject.description)
-  const [challenges, setChallenges] = useState(projectData[3].aboutProject.challenges)
-  const [outcomes, setOutcomes] = useState(projectData[3].aboutProject.positiveOutcomes)
+  const [videoSrc, setVideoSrc] = useState(projectData[1].link)
+  const [descTitle, setTitle] = useState(projectData[1].aboutProject.title)
+  const [videoData, setVideoData] = useState(projectData[1].aboutProject.videoData)
+  const [desc, setDesc] = useState(projectData[1].aboutProject.description)
+  const [challenges, setChallenges] = useState(projectData[1].aboutProject.challenges)
+  const [outcomes, setOutcomes] = useState(projectData[1].aboutProject.positiveOutcomes)
 
   return (
 
