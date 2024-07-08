@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  margin: 50px 10px;
+  
+  display: flex;
+}
+
+.project .photo {
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.project .photo img {
+  max-width: 500px;
+  height: auto;
+}
+
+.project .info {
+  padding: 10px;
+  width: 600px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: wrap;
+}
+
+.tech .pill {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.4);
+  padding: 0px 10px 1px 10px;
+  height: max-content;
+  width: max-content;
+  white-space: nowrap;
+}

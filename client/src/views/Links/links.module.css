@@ -1,0 +1,11 @@
+.container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.container p {
+  font-size: 20px;
+}
