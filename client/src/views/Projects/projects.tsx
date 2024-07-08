@@ -53,10 +53,10 @@ function Projects() {
                     <br />
                     <br />
                     <p>
-                        Entrepreneurial endeavor born from a desire to challenge
-                        myself. I wanted to single-handedly build a production
-                        level app that would push, expand, and reinforce my
-                        knowledge relative to software development and design.
+                        Personal project, wanted to single-handedly build a
+                        production level app that would push, expand, and
+                        reinforce my knowledge relative to software development
+                        and design.
                     </p>
                     <br />
                     <p>
