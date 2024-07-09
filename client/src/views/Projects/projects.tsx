@@ -12,6 +12,7 @@ function Projects() {
             'Figma',
             'Firebase',
             'Vercel',
+            'React',
         ],
         kiosk: [
             'JavaScript',
@@ -22,6 +23,7 @@ function Projects() {
             'Jenkins',
             'GCP',
             'i18next',
+            'React',
         ],
         webApp: [
             'JavaScript',
@@ -34,6 +36,17 @@ function Projects() {
             'Jenkins',
             'GCP',
             'i18next',
+            'React',
+        ],
+        agencyAnalytics: [
+            'JavaScript',
+            'TypeScript',
+            'LESS',
+            'CSS Modules',
+            'Storybook',
+            'GCP',
+            'Docker',
+            'React',
         ],
     }
 
@@ -76,17 +89,18 @@ function Projects() {
             </article>
             <article className={styles.project}>
                 <div className={styles.photo}>
-                    <img src="/ww-greetings.png" />
+                    <img src="/recycletek-kiosk.png" />
                 </div>
                 <div className={styles.info}>
                     <h5>Recycletek - Kiosk App</h5>
                     <br />
                     <p>
-                        Touchscreen interface built for Recycletek. The UI
-                        interacts with the machinery and AI software that
-                        collects, counts, and gives users money for returning
-                        their bottles. The reverse vending machine aims to solve
-                        many issues prevalent in the consumer recycling process.
+                        Touchscreen interface built for Recycletek. Sole
+                        developer and designer on the project. The UI interacts
+                        with the machinery and AI software that collects,
+                        counts, and gives users money for returning their
+                        bottles. The reverse vending machine aims to solve many
+                        issues prevalent in the consumer recycling process.
                     </p>
                     <br />
                     <p>
@@ -105,7 +119,7 @@ function Projects() {
             </article>
             <article className={styles.project}>
                 <div className={styles.photo}>
-                    <img src="/ww-greetings.png" />
+                    <img src="/recycletek-webapp.png" />
                 </div>
                 <div className={styles.info}>
                     <h5>Recycletek - Web App</h5>
@@ -132,6 +146,39 @@ function Projects() {
                     <br />
                     <div className={styles.tech}>
                         {tech.webApp.map((item) => (
+                            <div className={styles.pill}>{item}</div>
+                        ))}
+                    </div>
+                </div>
+            </article>
+            <article className={styles.project}>
+                <div className={styles.photo}>
+                    <img src="/agency-analytics.png" />
+                </div>
+                <div className={styles.info}>
+                    <h5>Agency Analytics</h5>
+                    <br />
+                    <a href="https://agencyanalytics.com/" target="_blank">
+                        <p>agencyanalytics.com</p>
+                    </a>
+                    <br />
+                    <br />
+
+                    <p>
+                        SaaS that empowers digital marketers, providing data and
+                        client presentation solutions. Mid size business with
+                        over 130,000 end users.
+                    </p>
+                    <br />
+                    <p>
+                        Worked in a siloed team targeting user experience. Large
+                        legacy codebase, therefore a significant portion of
+                        tasks were maintenance related. However, was frequently
+                        involved in ongoing high-importance feature builds.
+                    </p>
+                    <br />
+                    <div className={styles.tech}>
+                        {tech.agencyAnalytics.map((item) => (
                             <div className={styles.pill}>{item}</div>
                         ))}
                     </div>
