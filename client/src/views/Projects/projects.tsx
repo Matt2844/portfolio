@@ -23,6 +23,7 @@ function Projects() {
             'Jenkins',
             'GCP',
             'i18next',
+            'JSS',
             'React',
         ],
         webApp: [
@@ -35,6 +36,7 @@ function Projects() {
             'Adobe Photoshop',
             'Jenkins',
             'GCP',
+            'JSS',
             'i18next',
             'React',
         ],
