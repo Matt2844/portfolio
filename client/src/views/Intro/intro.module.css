@@ -26,3 +26,18 @@
   bottom: 0px;
   right: -10px;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    min-height: 80vh;
+  }
+
+  .header .background {
+    right: 25px;
+    width: 160px;
+    height: 70px;
+    bottom: 37px;
+  }
+
+}
