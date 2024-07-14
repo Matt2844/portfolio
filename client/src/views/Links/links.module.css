@@ -1,11 +1,16 @@
 .container {
   height: 100px;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 10px;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: rgb(40, 40, 40);
 }
 
 .container p {
   font-size: 20px;
+}
+
+.container i {
+ font-size: 46px;
 }

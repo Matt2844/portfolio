@@ -48,13 +48,27 @@ function Projects() {
             'Storybook',
             'GCP',
             'Docker',
+            'SQL',
             'React',
         ],
+        viewLabsMeet: [
+            'JavaScript',
+            'AWS S3',
+            'AWS EC2',
+            'Node.js',
+            'MUI',
+            'SQL',
+            'Redux',
+            'JSS',
+            'React',
+            'Bash Scripting',
+        ],
+        viewLabsUlta: ['JavaScript', 'krpano', 'MUI', 'JSS'],
     }
 
     return (
         <div className={styles.container}>
-            <h4>Projects</h4>
+            <h4>Production &amp; Corporate Projects</h4>
             <article className={styles.project}>
                 <div className={styles.photo}>
                     <img src="/ww-greetings.png" />
@@ -181,6 +195,77 @@ function Projects() {
                     <br />
                     <div className={styles.tech}>
                         {tech.agencyAnalytics.map((item) => (
+                            <div className={styles.pill}>{item}</div>
+                        ))}
+                    </div>
+                </div>
+            </article>
+            <article className={styles.project}>
+                <div className={styles.photo}>
+                    <img src="/view-labs-meet.png" />
+                </div>
+                <div className={styles.info}>
+                    <h5>View Labs - Conferencing Platform</h5>
+                    <br />
+                    <a href="https://www.viewlabs.com/360meet" target="_blank">
+                        <p>viewlabs.com/360meet</p>
+                    </a>
+                    <br />
+                    <br />
+
+                    <p>
+                        Video conferencing platform built for hosting virtual
+                        real estate tours.
+                    </p>
+                    <br />
+                    <p>
+                        Worked on the project as a junior developer. Learned how
+                        to use Redux and many other tools while on the job. The
+                        startup environment allowed for the opportunity to
+                        develop many important features despite limited
+                        experience, ultimately fast-tracking my skillset.
+                    </p>
+                    <br />
+                    <div className={styles.tech}>
+                        {tech.viewLabsMeet.map((item) => (
+                            <div className={styles.pill}>{item}</div>
+                        ))}
+                    </div>
+                </div>
+            </article>
+            <article className={styles.project}>
+                <div className={styles.photo}>
+                    <img src="/view-labs-ulta.png" />
+                </div>
+                <div className={styles.info}>
+                    <h5>View Labs - Ulta Virtual Tour</h5>
+                    <br />
+                    <a
+                        href="https://chainstoreage.com/ulta-beauty-continues-blending-physical-and-digital-experiences"
+                        target="_blank"
+                    >
+                        <p>Press Release</p>
+                    </a>
+                    <br />
+                    <br />
+
+                    <p>
+                        View Labs (formerly VirtualAPT) was contracted by the
+                        largest beauty retailer in America to build an
+                        interactive virtual tour.
+                    </p>
+                    <br />
+                    <p>
+                        Led the UI development, guiding and assisting interns
+                        that were also placed on the project. Was a unique
+                        project given the tech stack - an interactive video
+                        built with krpano that communicated seamlessly with
+                        React overlays. Please note the project was developed a
+                        few years ago and has since been moved or deleted.
+                    </p>
+                    <br />
+                    <div className={styles.tech}>
+                        {tech.viewLabsUlta.map((item) => (
                             <div className={styles.pill}>{item}</div>
                         ))}
                     </div>
